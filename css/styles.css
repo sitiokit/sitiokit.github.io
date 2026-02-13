@@ -613,30 +613,26 @@ footer {
 .sticky-cta {
     display: none;
     position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 20px;
+    right: 16px;
     z-index: 998;
-    background: rgba(10, 14, 26, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 12px 16px;
-    border-top: 1px solid var(--border);
 }
 .sticky-cta a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
     background: #25d366;
     color: white;
-    padding: 14px;
-    border-radius: var(--radius-sm);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
-    width: 100%;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: var(--transition);
 }
-.sticky-cta a svg { width: 20px; height: 20px; fill: white; }
+.sticky-cta a:hover { transform: scale(1.1); }
+.sticky-cta a svg { width: 26px; height: 26px; fill: white; }
+.sticky-cta a span { display: none; }
 
 /* ===== REVEAL ===== */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
